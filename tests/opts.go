@@ -1,9 +1,9 @@
 package tests
 
 import (
-	"github.com/b2broker/simplefix-go/session"
-	"github.com/b2broker/simplefix-go/session/messages"
-	fixgen "github.com/b2broker/simplefix-go/tests/fix44"
+	"github.com/YoungAgency/simplefix-go/session"
+	"github.com/YoungAgency/simplefix-go/session/messages"
+	fixgen "github.com/YoungAgency/simplefix-go/tests/fix44"
 )
 
 var pseudoGeneratedOpts = session.Opts{

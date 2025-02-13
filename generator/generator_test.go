@@ -2,9 +2,10 @@ package generator
 
 import (
 	"fmt"
-	"github.com/b2broker/simplefix-go/utils"
 	"os"
 	"testing"
+
+	"github.com/YoungAgency/simplefix-go/utils"
 )
 
 var generator *Generator

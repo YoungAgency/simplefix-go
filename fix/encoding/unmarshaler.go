@@ -3,9 +3,10 @@ package encoding
 import (
 	"bytes"
 	"fmt"
-	"github.com/b2broker/simplefix-go/fix"
-	"github.com/b2broker/simplefix-go/session/messages"
 	"reflect"
+
+	"github.com/YoungAgency/simplefix-go/fix"
+	"github.com/YoungAgency/simplefix-go/session/messages"
 )
 
 type Validator interface {

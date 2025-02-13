@@ -9,12 +9,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/b2broker/simplefix-go/fix/encoding"
+	"github.com/YoungAgency/simplefix-go/fix/encoding"
 
-	simplefixgo "github.com/b2broker/simplefix-go"
-	"github.com/b2broker/simplefix-go/fix"
-	"github.com/b2broker/simplefix-go/session/messages"
-	"github.com/b2broker/simplefix-go/utils"
+	simplefixgo "github.com/YoungAgency/simplefix-go"
+	"github.com/YoungAgency/simplefix-go/fix"
+	"github.com/YoungAgency/simplefix-go/session/messages"
+	"github.com/YoungAgency/simplefix-go/utils"
 )
 
 type LogonState int64

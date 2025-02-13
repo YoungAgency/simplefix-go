@@ -2,8 +2,9 @@ package encoding
 
 import (
 	"bytes"
-	"github.com/b2broker/simplefix-go/fix"
 	"testing"
+
+	"github.com/YoungAgency/simplefix-go/fix"
 )
 
 const visibleDelimiter = "|"

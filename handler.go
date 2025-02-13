@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/b2broker/simplefix-go/fix"
-	"github.com/b2broker/simplefix-go/session/messages"
-	"github.com/b2broker/simplefix-go/utils"
+	"github.com/YoungAgency/simplefix-go/fix"
+	"github.com/YoungAgency/simplefix-go/session/messages"
+	"github.com/YoungAgency/simplefix-go/utils"
 )
 
 const AllMsgTypes = "ALL"

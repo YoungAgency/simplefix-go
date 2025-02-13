@@ -1,8 +1,8 @@
 package session
 
 import (
-	simplefixgo "github.com/b2broker/simplefix-go"
-	"github.com/b2broker/simplefix-go/fix"
+	simplefixgo "github.com/YoungAgency/simplefix-go"
+	"github.com/YoungAgency/simplefix-go/fix"
 )
 
 // MessageStorage is an interface providing a basic method for storing messages awaiting to be sent.

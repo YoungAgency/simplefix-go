@@ -1,6 +1,6 @@
 package messages
 
-import "github.com/b2broker/simplefix-go/fix"
+import "github.com/YoungAgency/simplefix-go/fix"
 
 // ComponentConverter is an interface providing functionality to a builder of trailer messages.
 type ComponentConverter interface {
