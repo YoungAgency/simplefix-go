@@ -24,7 +24,7 @@ func NewHandlerPool() *HandlerPool {
 }
 
 func (p *HandlerPool) free(msgType string) {
-	if len(p.handlers[msgType]) != 0 {
+	if len(p.handlers[msgType]) == 0 {
 		return
 	}
 
