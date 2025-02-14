@@ -642,13 +642,19 @@ func (s *Session) send(msg messages.Message) error {
 	s.mu.Lock()
 	defer s.mu.Unlock()
 
-	nextSeqNum, err := s.counter.GetNextSeqNum(fix.StorageID{
-		Sender: s.LogonSettings.SenderCompID,
-		Target: s.LogonSettings.TargetCompID,
-		Side:   fix.Outgoing,
-	})
-	if err != nil {
-		return err
+	nextSeqNum := 0
+	if msg.HeaderBuilder().MsgSeqNum() != 0 {
+		nextSeqNum = msg.HeaderBuilder().MsgSeqNum()
+	} else {
+		nextSeqNum2, err := s.counter.GetNextSeqNum(fix.StorageID{
+			Sender: s.LogonSettings.SenderCompID,
+			Target: s.LogonSettings.TargetCompID,
+			Side:   fix.Outgoing,
+		})
+		if err != nil {
+			return err
+		}
+		nextSeqNum = nextSeqNum2
 	}
 	msg.HeaderBuilder().
 		SetFieldMsgSeqNum(nextSeqNum).
