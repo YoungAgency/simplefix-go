@@ -673,7 +673,7 @@ func (s *Session) IsLogged() bool {
 	s.stateMu.RLock()
 	defer s.stateMu.RUnlock()
 
-	return s.state == SuccessfulLogged
+	return s.state == SuccessfulLogged || s.state == WaitingTestReqAnswer
 }
 
 func (s *Session) Context() context.Context {
